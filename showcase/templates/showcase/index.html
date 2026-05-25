@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PocketScope | Membrane Protein Intelligence</title>
+  <link rel="stylesheet" href="{% static 'showcase/css/style.css' %}" />
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+
+  <header class="topbar shell">
+    <div class="brand">PocketScope</div>
+    <nav>
+      <a href="#platform">Platform</a>
+      <a href="#traction">Traction</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="theme-toggle" aria-label="Toggle theme">◐</button>
+  </header>
+
+  <main class="shell">
+    <section class="hero panel">
+      <p class="eyebrow">AI Platform for Membrane Protein Pocket Discovery</p>
+      <h1>Investor-ready interface for a next-generation therapeutic discovery engine.</h1>
+      <p class="lead">A sleek, confidential presentation layer built to communicate technical strength, commercial upside, and product maturity at a glance.</p>
+      <div class="cta-row">
+        <a href="#traction" class="btn primary">View Traction</a>
+        <a href="#contact" class="btn ghost">Request Data Room Access</a>
+      </div>
+      <div class="kpi-grid">
+        <article><span class="kpi" data-target="92">0</span><small>Model precision (%)</small></article>
+        <article><span class="kpi" data-target="18">0</span><small>Pharma pilot conversations</small></article>
+        <article><span class="kpi" data-target="3">0</span><small>Pipeline indications</small></article>
+        <article><span class="kpi" data-target="12">0</span><small>Month runway extension goal</small></article>
+      </div>
+    </section>
+
+    <section id="platform" class="panel split">
+      <div>
+        <h2>Platform Narrative</h2>
+        <p>Position PocketScope as a computational layer between target identification and medicinal chemistry, prioritizing high-value membrane protein pockets with explainable confidence mapping.</p>
+        <ul class="feature-list">
+          <li>Multimodal structure-aware ranking workflow</li>
+          <li>Confidence and novelty scoring overlays</li>
+          <li>Program-level portfolio prioritization dashboard</li>
+        </ul>
+      </div>
+      <div class="mock-terminal" aria-label="platform demo narrative">
+        <p>&gt; Session: Investor_Demo_Alpha</p>
+        <p>&gt; Targets loaded: GPCR, Ion Channel, Transporter</p>
+        <p>&gt; Pocket candidates surfaced: 37</p>
+        <p>&gt; High-confidence actionable: 11</p>
+        <p>&gt; Estimated wet-lab cycles reduced: 24%</p>
+      </div>
+    </section>
+
+    <section id="traction" class="panel">
+      <h2>Commercial & Scientific Traction</h2>
+      <div class="card-grid">
+        <article class="info-card"><h3>Validation</h3><p>Benchmark-ready positioning against legacy pocket identification workflows with transparent confidence reporting.</p></article>
+        <article class="info-card"><h3>Go-to-Market</h3><p>Biotech licensing and co-development pathway with staged enterprise pilots and recurring analytics contracts.</p></article>
+        <article class="info-card"><h3>Defensibility</h3><p>Data network effects from cumulative membrane protein annotations and proprietary ranking heuristics.</p></article>
+      </div>
+    </section>
+
+    <section id="roadmap" class="panel">
+      <h2>Execution Roadmap</h2>
+      <div class="timeline">
+        <div><strong>Q3 2026</strong><span>Pilot cohort onboarding + integration toolkit release</span></div>
+        <div><strong>Q4 2026</strong><span>Expanded structure-class coverage and enterprise analytics tier</span></div>
+        <div><strong>Q1 2027</strong><span>First revenue conversion milestone + partner publication cycle</span></div>
+      </div>
+    </section>
+
+    <section id="contact" class="panel footer-cta">
+      <h2>Raise Narrative Ready</h2>
+      <p>This template is optimized for investor walkthroughs, partner discussions, and confidential demo sessions.</p>
+      <a href="#" class="btn primary">Schedule Private Demo</a>
+    </section>
+  </main>
+
+  <script src="{% static 'showcase/js/app.js' %}"></script>
+</body>
+</html>
