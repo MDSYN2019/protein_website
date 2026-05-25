@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Membrane Pocket Predictor</title>
+  <link rel="stylesheet" href="{% static 'showcase/css/style.css' %}" />
+</head>
+<body>
+  <div class="ambient"></div>
+  <header class="topbar">
+    <h1>PocketScope</h1>
+    <button id="theme-toggle" aria-label="Toggle theme">◐</button>
+  </header>
+
+  <main class="shell">
+    <section class="hero panel">
+      <p class="eyebrow">Membrane Protein Pocket Prediction</p>
+      <h2>Discreet, data-forward template for product demos.</h2>
+      <p>Swap in your model outputs, benchmark plots, and structures without redesigning the front-end.</p>
+      <div class="cta-row">
+        <a href="#workspace" class="btn primary">Open Workspace</a>
+        <a href="#" class="btn ghost">View API Docs</a>
+      </div>
+    </section>
+
+    <section id="workspace" class="workspace panel">
+      <div class="controls">
+        <h3>Interactive Preview</h3>
+        <label>Protein ID
+          <input id="protein-id" value="7K3M" />
+        </label>
+        <label>Confidence Threshold
+          <input id="threshold" type="range" min="0" max="100" value="72" />
+          <span id="threshold-value">72%</span>
+        </label>
+        <label>Pocket Mode
+          <select id="mode">
+            <option>Conservative</option>
+            <option selected>Balanced</option>
+            <option>Exploratory</option>
+          </select>
+        </label>
+      </div>
+      <div class="result-card">
+        <h4 id="summary-title">Predicted Pockets · 7K3M</h4>
+        <ul id="pocket-list"></ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="{% static 'showcase/js/app.js' %}"></script>
+</body>
+</html>
